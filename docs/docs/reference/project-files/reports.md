@@ -244,6 +244,7 @@ type: report
 display_name: Daily AI Insights
 refresh:
     cron: "0 8 * * *"
+watermark: inherit # resolve "latest" against the explore's data instead of the trigger time
 data:
     ai:
         prompt: "Analyze key metrics and identify significant changes"
